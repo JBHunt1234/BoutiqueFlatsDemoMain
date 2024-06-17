@@ -1,0 +1,53 @@
+form {
+  margin-bottom: 40px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  
+}
+
+input, textarea {
+  width: 100%;
+  border-radius: 0px;
+  border: 1px $black solid;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  svg {
+    margin-right: 10px;
+  }
+  a {
+    color: $black;
+  }
+}
+
+.hs-form-iframe {
+
+}
+.hubspot-link__container {
+  opacity: 0;
+}
+@media (min-width: $breakpoint) {  
+
+  .request-grid {
+    display: flex;
+  }
+  .form {
+    width: 60%;
+  }
+  .contacts {
+    padding-left: 60px;
+    
+  }
+}

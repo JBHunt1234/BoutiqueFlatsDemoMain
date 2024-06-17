@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179151386-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-179151386-1');
+    </script>
+
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="{{title}}">
+    <meta name="description" content="Boutique Salon and Beauty suites located in {{#if isSandySprings}}Sandy Springs{{/if}}{{#if isCumming}}Cumming{{/if}}, Ga">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.boutiquesalonflats.com">
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:description" content="Boutique Salon and Beauty suites located in {{#if isSandySprings}}Sandy Springs{{/if}}{{#if isCumming}}Cumming{{/if}}, Ga">
+    <meta property="og:image" content="images/meta-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.boutiquesalonflats.com">
+    <meta property="twitter:title" content="{{title}}">
+    <meta property="twitter:description" content="Boutique Salon and Beauty suites located in {{#if isSandySprings}}Sandy Springs{{/if}}{{#if isCumming}}Cumming{{/if}}, Ga">
+    <meta property="twitter:image" content="images/meta-image.jpg">
+
+    <link rel="stylesheet" href="https://use.typekit.net/zhj2baq.css">
+    
+  </head>
+<body>
+  
+  <div id="mobileNavigationMenu" class="mobile-nav">
+    <div class="container">
+    <div class="mobile-nav-header">
+      
+        <a href="/{{location}}/request-info" class="button request-info">Request Info</a>
+        
+        <div class="closeNav" id="closeMenu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </div>
+      </div>
+      <ul>
+        <li><a href="/{{location}}">Home</a></li>
+        <li><a href="/{{location}}/about">About</a></li>
+        <li><a href="/{{location}}/family">Beauty Pros</a></li>
+        <li><a href="/{{location}}/photos">Photos</a></li>
+        <li><a href="/{{location}}/faqs">FAQs</a></li>
+        <li><a href="/{{location}}/location">Location</a></li>
+      </ul>
+      <a href="/" class="switch-locations">Switch Locations</a>
+    </div>
+  </div>
+  <div class="container">
+    <header class="header">
+      <svg class="desktop-hamburger" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <div class="locations" id="locations">
+      <div class="locations-toggle" id="locationToggle">
+        Locations
+      </div>
+      <div class="locations-list">
+        <div class="locations-list-inner">
+          <ul>
+            <li><a {{#if isSandySprings}}class="active"{{/if}} href="/sandy-springs">Sandy Springs</a></li>
+            <li><a {{#if isCumming}}class="active"{{/if}} href="/cumming">Cumming</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+        <a href="/{{location}}" class="name">
+          {{#if isCumming}}
+          <div class="logo-bf"></div>
+          <div class="subtitle">Salon and Beauty Suites in Cumming, GA</div>
+          {{/if}} 
+          {{#if isSandySprings}}
+          <div class="logo">Boutique Salon Flats</div>
+          <div class="subtitle">Salon and Beauty Suites in Sandy Springs, GA</div>
+          {{/if}} 
+        </a>
+      
+      <div class="openNav" id="openMenu">
+        <svg class="mobile-hamburger" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </div>
+      
+      <div class="request-info-wrapper">
+        <a class="ig-social" target="_blank" href="https://www.instagram.com/boutique.flats/"></a>
+        
+        <a href="/{{location}}/request-info" class="button button--blue request-info">Request Info</a>
+      </div>
+      
+    </header>
+      <div class="navigation">
+        <ul>
+          <li><a href="/{{location}}">Home</a></li>
+          <li><a href="/{{location}}/about">About</a></li>
+          <li><a href="/{{location}}/family">Beauty Pros</a></li>
+          <li><a href="/{{location}}/photos">Photos</a></li>
+          <li><a href="/{{location}}/faqs">FAQs</a></li>
+          <li><a href="/{{location}}/location">Location</a></li>
+        </ul>
+    </div>
+  </div>
+
+  

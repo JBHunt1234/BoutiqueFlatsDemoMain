@@ -1,0 +1,61 @@
+body {
+  color: $black;
+  font-family: Baskerville, serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-family: Baskerville, serif;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: Baskerville, serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  
+}
+
+.link-arrow {
+  position: relative;
+  text-decoration: none;
+  color: $black;
+  display: inline-block;
+  &:after {
+    content:'';
+    display: block;
+    width: 20px;
+    height:20px;
+    background: url('../images/arrow-right.svg');
+    position: absolute;
+    background-repeat: no-repeat;
+    right: -25px;
+    top: -2px;
+    transition: 0.25s all;
+  }
+  &:hover {
+    opacity: 0.75;
+    &:after {
+      right: -30px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint) { 
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  p {
+    width: 72%;
+  }
+}

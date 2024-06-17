@@ -1,0 +1,76 @@
+.landing {
+  margin: 20px;
+  background: $grey;
+  .left {
+    background: url('../../images/cumming_home/Lobby\ 1.jpg');
+    padding-bottom: 55%;
+    display: block;
+    background-size: cover;
+    background-position: top;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left:0px;
+    right: 0px;
+    opacity: 0.4;
+    z-index: -1;
+  }
+  .right {
+    background: $grey;
+    padding: 40px;
+    text-align: center;
+    position: absolute;
+    top: calc(35% - 150px);
+    width: calc(100% - 120px);
+    .logo {
+      display: block;
+      width: 100%;
+      height: 40px;
+      background: url('../../images/bf-logo.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin: 10px auto;
+
+    }
+    a {
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+    p {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $breakpoint) {  
+.landing {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  .left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    opacity: 1;
+    z-index: 1;
+    background-size: cover;
+    padding-bottom: 50%;
+  }
+  .right {
+    position: relative;
+    width: 50%;
+    a {
+      display: inline-block;
+      padding: 10px 15px;
+      width: 150px;
+      font-size:14px;
+      margin-top: 10px;
+    }
+    p {
+
+    }
+  }
+}
+
+}

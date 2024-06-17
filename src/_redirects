@@ -1,0 +1,5 @@
+# http and https need separate rules if you don’t force_ssl!
+#http://www.boutiquesalonflats.com/* https://www.boutiqueflats.com/sandy-springs 301!
+https://www.boutiquesalonflats.com/* https://www.boutiqueflats.com/sandy-springs 301!
+#http://boutiquesalonflats.com/* https://www.boutiqueflats.com/sandy-springs 301!
+https://boutiquesalonflats.com/* https://www.boutiqueflats.com/sandy-springs 301!

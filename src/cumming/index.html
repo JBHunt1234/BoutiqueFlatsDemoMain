@@ -1,0 +1,273 @@
+{{> header isCumming='true' location="cumming" title='Boutique Flats | Cumming' slug='/' metaDescription='Salon Suites in Cumming, GA' isHome='true'}}
+<div class="container">
+  <div class="hero">
+    <img src="../images/cumming/Lobby 1.jpg" alt="">
+  </div>
+  
+  <section class="section">
+    <h2>Become a suite owner today</h2>
+    <p class="intro">We provide everything you need to start your own salon or beauty business.  A beautifully designed, high-end, move-in-ready flat with one or two chairs and all the amenities.</p>
+
+    <div class="homepage-photo-grid">
+      <img src="../images/cumming_home/Lobby 1.jpg" alt="">
+      <img src="../images/cumming_home/Lobby 3.jpg" alt="">
+      <img src="../images/cumming_home/Hair Suite 2.jpg" alt="">
+    </div>
+    <a href="./photos" class="link-arrow">View more photos</a>
+  </section>
+  
+  <section class="section about-us">
+    <h2>Why Boutique Flats?</h2>
+
+    <div class="why-item">
+      <p>Are you ready to take your business to new heights? Boutique Flats in Sandy Springs and Cumming offer move-in-ready, upscale salon flats designed to help your business thrive.</p>
+      <p>With Boutique Flats, you’ll experience:</p>
+      <div class="why-amenities">
+        <ul>
+          <li>Onsite Resource: Property Manager on-site throughout the week</li>
+          <li>Flexible Leasing: Choose from 3 or 12-month leases</li>
+          <li>Turnkey Solutions: Fully equipped flats with furniture and lighting package</li>
+          <li>Business Support: Ongoing marketing and training to help grow your business</li>
+          <li>Terrific Environment: Professional, comfortable, and no drama!</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section amenities">
+    <h2>Amenities</h2>
+    <p>Boutique Salon Flats provides all the amenities necessary for you to grow and run your beauty or wellness business. </p>
+    <div class="amenities-list">
+      <ul>
+        <li>Styling areas with storage and mirrors</li>
+        <li>Retail shelves to help boost sales</li>
+        <li>Comfortable washing stations and chairs/li>
+      </ul>
+      <ul>
+        <li>Private rooms and free laundry</li>
+        <li>Complimentary WiFi and a dedicated break room</li>
+        <li>State-of-the-art security with personalized key codes</li>
+      </ul>
+      <ul>
+        <li>Easy access to trash and recycling</li>
+        <li>Tea and coffee bar for clients</li>
+        <li>Large, comfortable, and welcoming lobby areas</li>
+      </ul>
+    </div>
+
+    <a href="/cumming/faqs" class="link-arrow">Frequently Asked Questions</a>
+  </section>
+  
+</section>
+
+<div class="why-item">
+  <h2>Boutique Flats is locally-owned and managed.</h2>
+  <p>We believe in giving back to our community by helping small business owners grow and thrive. <br>Contact us today to schedule a tour.</p>
+
+</div>
+</section>
+
+<div class="location-wrapper">
+  <div class="container">
+    <section class="section section--location">
+      <h2>Location</h2>
+      <p class="address">
+        Keith Bridge Commons<br>
+        2635 Freedom Pkwy<br>
+        Cumming, GA 30041
+      </p>
+      <a href="/cumming/location" class="link-arrow">More on location</a>
+    </section>
+  </div>
+  <div id="map" class="map"></div>
+</div>
+
+<script>
+  function initMap() {
+    // Styles a map in night mode.
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 34.25007128892778, lng: -84.09163110300548},
+      zoom: 14,
+      disableDefaultUI: true,
+      styles: [
+        {
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#f5f5f5"
+            }
+          ]
+        },
+        {
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#616161"
+            }
+          ]
+        },
+        {
+          "elementType": "labels.text.stroke",
+          "stylers": [
+            {
+              "color": "#f5f5f5"
+            }
+          ]
+        },
+        {
+          "featureType": "administrative.land_parcel",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#bdbdbd"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#eeeeee"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#757575"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.park",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#e5e5e5"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.park",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#9e9e9e"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#757575"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#dadada"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#616161"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#9e9e9e"
+            }
+          ]
+        },
+        {
+          "featureType": "transit.line",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#e5e5e5"
+            }
+          ]
+        },
+        {
+          "featureType": "transit.station",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#eeeeee"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#c9c9c9"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#9e9e9e"
+            }
+          ]
+        }
+      ]
+    });
+    var image = 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'; 
+    var myLatlng = new google.maps.LatLng(34.25007128892778, -84.09163110300548);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      icon: image
+    });
+
+    // To add the marker to the map, call setMap();
+    marker.setMap(map);
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK02J9eu7UW-aMhBIlP4i5n_PzjBX2oZs&callback=initMap"
+defer></script>
+<div class="container">
+  <section class="section">
+    <h2>Request Info</h2>
+    <p>Reach out to find out how you can lease a suite at Boutique Flats!</p>
+    <a href="/cumming/request-info" class="button button--blue request-info-button">REQUEST INFO</a>
+  </section>
+</div>
+{{> footer}}

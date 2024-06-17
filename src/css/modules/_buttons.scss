@@ -1,0 +1,33 @@
+.button {
+  display: block;
+  padding: 20px 15px;
+  border: 1px $black solid;
+  text-decoration: none;
+  color: $black;
+  &--black {
+    color: #FFF;
+    background: $black;
+    text-align: center;
+  }
+  &--teal {
+    background: $teal;
+    color: #FFF;
+    border: none;
+  }
+  &--blue {
+    background: $blue;
+    color: #FFF;
+    border: none;
+    &:hover {
+      background: $teal;
+    }
+  }
+  &--purple {
+    background: $purple;
+    color: #FFF;
+    border: none;
+  }
+  &:hover {
+    opacity: 0.75;
+  }
+}
